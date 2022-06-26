@@ -1,0 +1,92 @@
+* {
+    border: 0;
+    padding: 0;
+}
+
+.option-container {
+    display: flex;
+    margin: 0 auto 0.5rem auto;
+    width: 90%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(116, 235, 86, 0.5);
+    border-radius: 5px;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.option-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(116, 235, 86, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.option-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #333;
+    color: white;
+    border-radius: 3px;
+}
+
+.option-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
+/* heads-up-display */
+
+.heads-up-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-text {
+    text-align: center;
+}
+
+.question,
+.score {
+    font-size: 2rem;
+}
+
+.progress-bar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #333;
+    border-radius: 5px;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #333;
+    width: 0;
+}
+
+/* loader */
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #333;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform:rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
