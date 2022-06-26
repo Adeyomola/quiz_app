@@ -70,7 +70,7 @@ getNewQuestion = () => {
   // condition to take player to the end page when there are no more questions or when player exceeds number of questions
   if (availableQuestions === 0 || questionCounter >= max_questions) {
     // go to end page
-    return window.location.assign("/end.html");
+    return window.location.assign("./end.html");
   }
 
   //   question counter
