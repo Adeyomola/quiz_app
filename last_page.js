@@ -31,6 +31,6 @@ saveScore.addEventListener("click", (e) => {
 
   localStorage.setItem("highScores", JSON.stringify(highScores));
   setInterval(() => {
-    return window.location.assign("/index.html");
+    return window.location.assign("/quiz_app/index.html");
   }, 1000);
 });
